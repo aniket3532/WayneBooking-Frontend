@@ -3,7 +3,7 @@ import "./featured.css";
 
 const Featured = () => {
 
-    const { data, loading, error } = useFetch("/hotels/countByCity?cities=Mumbai,Chennai,Kolkata");
+    const { data, loading, error } = useFetch("https://waynebooking.onrender.com/api/hotels/countByCity?cities=Mumbai,Chennai,Kolkata");
 
     return ( 
         (loading === true)? "Loading please wait..." : <><div className="featured">
